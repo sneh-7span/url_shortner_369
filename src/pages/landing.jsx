@@ -60,7 +60,7 @@ const LandingPage = () => {
       saveUrl(code, processedUrl);
 
       // Set the result
-      setShortUrl(`http://localhost:5173/${code}`);
+      setShortUrl(`${window.location.origin}/${code}`);
     } catch (err) {
       setError(err.message);
     } finally {
